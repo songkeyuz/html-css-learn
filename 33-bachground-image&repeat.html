@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 600px;
+            height: 600px;
+            border: 1px solid red;
+            /* background-color: skyblue; */
+            /* 背景图压盖背景色 */
+            background-image: url(images/lufei1.png);
+            /* 默认repeat  整个背景区域重复 */
+            /* background-repeat: repeat; */
+
+            /* 不重复 */
+            /* background-repeat: no-repeat; */
+
+            /* 水平方向重复 */
+            /* background-repeat: repeat-x; */
+
+            /* 垂直方向重复 */
+            /* background-repeat: repeat-y; */
+            margin: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- background-image -->
+    <!-- 
+                实际渲染的位置：跟背景色一样
+                属性值： url(图片路径);
+            -->
+    <div class="box"></div>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 原子类  公共类 */
+        .inner_c {
+            margin: 0 auto;
+            width: 970px;
+        }
+
+        .cl {
+            clear: both;
+        }
+
+        .h10 {
+            height: 10px;
+        }
+
+        .mb10 {
+            margin-bottom: 10px;
+        }
+
+        .mb8 {
+            margin-bottom: 8px;
+        }
+
+        .mr {
+            margin-right: 10px;
+        }
+
+        /* head */
+        .head {
+            overflow: hidden;
+        }
+
+        .head h1 {
+            background-color: red;
+            float: left;
+            width: 277px;
+            height: 103px;
+        }
+
+        .head .lang {
+            float: right;
+            height: 49px;
+            width: 137px;
+            background-color: #00ff41;
+        }
+
+        .head .daohang {
+            float: right;
+            height: 46px;
+            width: 679px;
+            background-color: #00ff41;
+        }
+
+        /* bady */
+        .body {
+            overflow: hidden;
+        }
+
+        .body .slide {
+            float: left;
+            background-color: #ffca00;
+            height: 435px;
+            width: 310px;
+        }
+
+        .body .main_news {
+            float: left;
+            /* background-color: #0099ff; */
+            height: 400px;
+            width: 450px;
+        }
+
+        .body .main_news .new1 {
+            height: 240px;
+            background-color: #0099ff;
+        }
+
+        .body .main_news .new2 {
+            height: 110px;
+            background-color: #0099ff;
+        }
+
+        .body .main_news .new3 {
+            height: 30px;
+            background-color: #0099ff;
+        }
+
+        .body .main_r {
+            float: left;
+            background-color: #e4248b;
+            height: 401px;
+            width: 190px;
+        }
+
+        .body .main_nav {
+            float: left;
+            background-color: #009525;
+            height: 25px;
+            width: 650px;
+        }
+
+        /* floot */
+        .floot {
+            overflow: hidden;
+            height: 35px;
+            background-color: #000290;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- head -->
+    <div class="head inner_c">
+        <h1>logo</h1>
+        <div class="lang mb8">语言</div>
+        <div class="daohang">导航
+        </div>
+    </div>
+
+    <div class="cl h10"></div>
+    <!-- bady -->
+    <div class="body inner_c">
+        <div class="slide mr"></div>
+        <div class="main_news mr mb10">
+            <div class="new1 mb10"></div>
+            <div class="new2 mb10"></div>
+            <div class="new3 "></div>
+        </div>
+        <div class="main_r"></div>
+        <div class="main_nav"></div>
+    </div>
+
+    <div class="cl h10"></div>
+    <!-- floot -->
+    <div class="floot inner_c"></div>
+</body>
+
+</html>

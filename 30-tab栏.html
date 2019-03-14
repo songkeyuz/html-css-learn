@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 301px;
+            border-top: 4px solid blueviolet;
+            margin: 100px auto;
+        }
+
+        .box .top {
+            border-left: 1px solid #999;
+            overflow: hidden;
+        }
+
+        .box .top h3 {
+            float: left;
+            width: 99px;
+            height: 40px;
+            border-right: 1px solid #999;
+            border-bottom: 1px solid #999;
+            /* 放大后会存在1px的缺口  使用下面2个  消除这个影响 */
+            /* border-left: 1px solid #999;
+            margin-left: -1px; */
+            background: #cdcdcd;
+            font-size: 24px;
+            font-family: '宋体';
+            line-height: 40px;
+            text-align: center;
+        }
+
+        .box .top h3.xuanzhong {
+            background: none;
+            border-bottom: none;
+        }
+
+        .box .bottom div {
+            height: 150px;
+            background-color: skyblue;
+            display: none;
+        }
+
+        .box .bottom div.xuanzhong {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="top">
+            <h3 class="xuanzhong">新闻</h3>
+            <h3>娱乐</h3>
+            <h3>体育</h3>
+        </div>
+        <!-- tab栏（选项卡） -->
+        <!-- 没有选中的主体部分需要隐藏，选中显示 -->
+        <!-- 给所有元素加一个显示模式隐藏，给要显示的元素加一个显示模式块级 -->
+        <!-- 
+            display：none;隐藏元素
+            display：bolck;显示元素
+         -->
+        <div class="bottom">
+            <div class="xuanzhong">新闻内容</div>
+            <div>娱乐内容</div>
+            <div>体育内容</div>
+        </div>
+
+    </div>
+</body>
+
+</html>
