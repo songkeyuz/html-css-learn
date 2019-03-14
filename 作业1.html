@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>京东新闻</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .news{
+            width: 248px;
+            height: 163px;
+            border: 1px solid #e4e4e4;
+            margin: 100px auto ;
+            color: #666666;
+        }
+        .news .top{
+            height: 32px;
+            padding: 0 15px;
+            line-height: 32px;
+            border-bottom: 1px dotted #e8e8e7;
+        }
+        .news .top h2{
+            float: left;
+            font-family: "微软雅黑";
+            font-size: 16px;
+        }
+        .news .top a{
+            float: right;
+            font-size: 12px;
+            text-decoration: none;
+            color: #666666;
+        }
+        .news .top a:hover{
+            text-decoration: underline;
+        }
+        .news .top a span{
+            margin-left: 9px;
+        }
+        .news .bottom{
+            padding: 5px 0 0 15px;
+        }
+        .news ul{
+            list-style: none;
+            font-size: 12px;
+            line-height: 24px;
+        }
+        .news .bottom li span{
+            font-weight: bold;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="news">
+        <div class="top">
+            <h2>京东快报</h2>
+            <a href="#">更多<span>&gt;</span></a>
+        </div>
+        <div class="bottom">
+            <ul>
+                <li><span>[特惠]</span>这是一段新闻</li>
+                <li><span>[公告]</span>这是一段新闻</li>
+                <li><span>[特惠]</span>这是一段新闻</li>
+                <li><span>[公告]</span>这是一段新闻</li>
+                <li><span>[特惠]</span>这是一段新闻</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

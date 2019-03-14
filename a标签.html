@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>a标签</title>
+</head>
+
+<body>
+    <!-- anchor，超级链接，可以跳转到相应的网站 -->
+    <!-- 属性：
+        href    hypertext  reference 超文本引用，值为跳转链接的地址
+        target  表示是否在新的标签页打开链接，属性值"_blank"表示在新窗口打开
+        title  设置鼠标悬停文本 -->
+
+    <a href="http://www.baidu.com" target="_blank">跳转到百度</a>
+    <a href="http://www.163.com" title="点击跳转到网易"><img src="images/1.jpg" alt=""></a>
+    <!-- 
+        a的页面内锚点跳转
+            添加锚点的方法：
+            （1） 给对应位置的标签添加一个id属性，属性值就是id名
+            （2） 在需要添加锚点的位置，加入一个a标签，不用书写href属性，添加一个name命名与id一样
+            id名和name名在网页里必须是唯一的
+            跳转锚点：
+             将href属性值书写为#id名，#name名
+         -->
+</body>
+
+</html>

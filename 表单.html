@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单</title>
+</head>
+<body>
+    <form>
+        <p>
+            文本框： <input type="text" value="默认文本">
+        </p>
+
+        <p>
+            密码框： <input type="password">
+        </p>
+
+        <!-- 单选框 -->
+        <p>
+            性别：
+            <input type="radio" name="sex"> 男
+            <input type="radio" name="sex"> 女
+            <input type="radio" name="sex"> 保密
+        </p>
+
+        <!-- 下拉菜单 -->
+        <!-- 是一组标签，必须同时出现，有嵌套关系 -->
+        <!-- select：选择
+             option：选项 -->
+        <!-- select>option -->
+        <p>
+            所在城市：
+            <select name="" id="">
+                <option value="">北京</option>
+                <option value="">上海</option>
+                <option value="">广州</option>
+                <option value="">深圳</option>
+                <option value="">成都</option>
+            </select>
+        </p>
+        
+        <!-- 多选框 -->
+        <p>
+            兴趣爱好：
+            <input type="checkbox" name="hobby" >唱歌
+            <input type="checkbox" name="hobby" >跳舞
+            <input type="checkbox" name="hobby" >写代码
+            <input type="checkbox" name="hobby" >绘画
+            <input type="checkbox" name="hobby" >书法
+            <input type="checkbox" name="hobby" >上网
+            <input type="checkbox" name="hobby" >其他
+        </p>
+
+        <!-- 文本域 -->
+        <!-- textarea    可以输入多行文字 cols：属性值是数字，表示每一行有多少字节  rows：属性值是数字，数字表示有多少行    -->
+        <p>
+            个人简介：
+            <textarea name="" id="" cols="30" rows="10">请输入</textarea>
+        </p>
+
+        <!-- 按钮 -->
+        <p>
+            <input type="button" value="普通按钮">
+            <input type="reset"  value="重置"> 
+            <input type="submit" value="提交">
+        </p>
+    </form>
+</body>
+</html>

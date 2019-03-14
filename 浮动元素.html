@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>浮动元素让出标准流位置</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 300px;
+            height: 400px;
+            border: 1px solid #000;
+            background: #ccc;
+        }
+        .box .inner1{
+            float: left;
+            height: 100px;
+            width: 100px;
+            background: yellowgreen;
+        }
+        .box .inner2{
+            height: 200px;
+            width: 200px;
+            background: pink;
+        }
+        .ziwei{
+            font-size: 48px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        元素在标准文档流里有自己的书写位置，一个元素写完之后才能加载另一个元素
+        元素浮动之后，不再是标准流，位置会让给后面的标准文档流里的标签元素
+
+        让出的效果：看起来像是压盖效果。实际上我们不需要用浮动制作压盖，用绝对定位制作压盖
+        同一个父盒子里，有的元素浮动，有点不浮动，这种会影响标准流显示效果。
+    -->
+
+
+    <!-- 字围效果 -->
+        <!-- 
+            文字不会被浮动元素遮盖住，文字会绕开浮动元素进行排列
+         -->
+    <div class="box">
+        <div class="inner1"></div>
+        <div class="inner2"></div>
+    </div>
+
+    <p class="ziwei">字围效果</p>
+    <p><img src="images/浮动字围.png" alt=""></p>
+</body>
+</html>

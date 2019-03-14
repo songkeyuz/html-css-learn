@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文本</title>
+    
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        p{
+            width: 300px;
+            height: 40px;
+            border: 1px solid red;
+            color: #252525;
+            /* font-family: "宋体";
+               font-size: 14px;
+            /* line-height: 200%; */
+            /* line-height: 27px; */
+            /* font-weight: 700;
+               font-weight: bold; */ 
+            font:bold 14px/40px "宋体"
+        }
+        h2{
+            font-weight: normal;
+        }
+
+        li{
+            font-size: 30px;
+            line-height: 48px;
+            color: #333;
+            font-family: "Consolas","Arial","微软雅黑"
+        }
+        .li1{
+            /* font-style: normal; */
+            font: bold italic 40px/200% "Micrrosoft Yahei";
+        }
+        .li2{
+            font-style: italic;
+        }
+        .li3{
+            font-style: oblique;
+        }
+    </style>
+</head>
+<body>
+    <!-- 颜色color -->
+        <!-- 色值：十六进制，RGB，rgba，颜色名 -->
+    <!-- 字体font-family -->
+        <!-- 中文：微软雅黑，宋体 -->
+        <!-- 英文：Arial，Consola -->
+        <!-- font-family："Arial","Micrrosoft Yahei","SimSun" -->
+    <!-- 字号font-size -->
+        <!-- 谷歌默认最小12px，IE最小默认1px -->
+    <!-- 行高line-height -->
+        <!-- 一行文字实际占有的高度 -->
+        <!-- 单位：像素或百分比 -->
+<!-- 行高属性书写时，必须写在文字字号后面 -->        
+    <!-- 要让一行文字在盒子里垂直居中，让行高等于盒子高 -->
+
+    <!-- 字体加粗font-weight -->
+        <!-- 属性值：数字（100——700）、单词（bold加粗=700、normal正常=400） -->
+
+<!-- font：bold size/行高 "宋体" -->
+
+
+    <!-- 字体样式font-style -->
+        <!-- 设置字体倾斜样式或者正常样式 -->
+        <!-- 取值：normal正常、italic斜体、obloque斜体 -->
+
+
+
+    <h2>一个标题</h2>
+    <p>这是一段文字</p>
+    <ul>
+        <li class="li1">中文this is a paragraph,normal</li>
+        <li class="li2">中文this is a paragraph,italic</li>
+        <li class="li3">中文this is a paragraph,oblique</li>
+    </ul>
+</body>
+</html>

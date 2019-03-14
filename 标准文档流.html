@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>标准文档流</title>
+</head>
+
+<body>
+    <!-- 
+        1、从微观上有特殊的性质
+            a、html文本之间有空白折叠现象
+            b、文字、图片、表单元素等这些文本类型的元素有一个特点：高矮不齐，底边对齐
+            c、文字在盒子内如果一行书写完毕，会自动换行
+
+        2、块级元素和行内元素
+            标准文档流将我们HTML标签分成了：
+                块级标签：所有的容器级标签都是块级标签。文本级标签里的p标签也是一个块级标签
+                        body，div, h1, p, ul, ol, li, dl, dt, dd, table, tr, td 等
+                    块级元素会独占一行，同行不会出现其他的同级标签
+                    可以设置宽高
+                    嵌套的关系里，子盒子不设置宽度，会自动继承父亲内容的宽度100%
+
+                行内标签：除了p标签以外的文本级标签
+                        a, span, img, input 等文本类
+                    不会独占一行，可以与其他的行内元素并排在一行
+                    不能设置宽高
+                    不设置宽度，不会继承父亲的宽度。只能用内容撑开
+                行内块标签：既可以设置宽高，还可以在一行排列
+
+            有一个属性可以在块级元素和行内元素之间进行转换
+            显示模式：display  标签在HTML页面里以何种模式进行渲染
+            属性值：块级block，行内inline，行内块inline-block
+            块级转行内：display：inline ； 不常用
+            行内转块：display：block ；   常用
+            转行内块：display：inline-block 
+
+        标准文档流制作网页有局限：很多布局效果不能完成
+        解决办法：让元素脱离标准流，既可以设置宽高，又可以一行排列
+        方法：浮动、绝对定位、固定定位
+                
+     -->
+
+    <img src="images/文档流.png" alt=""><img src="images/文档流1.png" alt="">
+</body>
+
+</html>

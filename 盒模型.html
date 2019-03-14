@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盒模型</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 427px;
+            padding: 12px 20px;
+            border: 1px dashed #333;
+            margin: 40px;
+        }
+        .box p{
+            color: #DC2C2C;
+            font-size: 14px;
+            line-height: 28px;
+            text-indent: 2em;
+        }
+        .box1{
+            width: 0;
+            height: 0;
+            margin: 100px;
+            border: 30px solid white;
+            border-top-color: red;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 一个盒子包含了五部分：宽度（width），高度（height），内边距（padding），边框（border），外边距（margin） -->
+        <!-- 上（top）下(bottom)左(left)右(right)都可以设置内边距，单位px， -->
+            <!-- padding书写方法 -->
+                <!-- 四值法 -->
+                <!-- padding: top right bottom left； -->
+                <!-- 三值法  上 、左右 、下  左右数值一样-->
+                <!-- padding: top right+left bottom -->
+                <!-- 二值法 上下、左右 -->
+                <!-- padding: top+bottom  right+left -->
+                <!-- 单值法  上下左右都一样 -->
+            <!-- padding区域能渲染背景但不能书写内容 -->
+            
+        <!-- border -->
+            <!-- 1、按样式类型划分：线的宽度，线的样式，线的颜色 -->
+                <!-- 宽度 border-width  书写方法和padding一样 -->
+                    <!-- 单一属性书写时：border-方向-width -->
+                <!-- 颜色 border-color  书写方法盒padding一样 -->
+                <!-- 样式 border-style -->
+                    <!-- 
+                        solid   实线
+                        dashed  虚线
+                        dotted  点的虚线
+                        double  双线条
+                        groove  边框凹陷效果
+                        ridge   边框凸出效果
+                        inset   内容区域凹陷效果
+                        outset  内容区域凸出效果
+                     -->
+                     <!-- 书写方法也可以和padding一样 -->
+                     <!-- 单一方向的单一线型  border-top-style: 样式 -->
+            <!-- 2、按方向划分 -->
+                <!-- border-top（right、bottom、left）: 线宽 样式  颜色 -->
+        <!-- margin外边距 -->
+            <!-- 盒子与盒子之间的距离，设置方法和padding相似 -->
+            <!-- 复合属性，四个方向 -->
+            <!-- margin-top（right、bottom、left） -->
+            
+
+
+    <div class="box1"></div>
+
+    <div class="box">
+        <p>由于《还愿》中的“何老师”设定不太讨喜，一夜之间还成了网友们争相要“打死”的目标。
+            何炅本人早些时候在微博上发文开玩笑感叹自己“好惨”，也向网友们澄清“此何老师非彼何老师”。</p>
+    </div>
+</body>
+</html>

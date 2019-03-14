@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>清空默认样式</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* 盒子没有嵌套关系 */
+        div{
+            width: 200px;
+            height: 200px;
+            background: skyblue;
+        }
+        .box1{
+            margin: 50px 0;
+        }
+        .box2{
+            margin: 40px 0;
+        }
+        p{
+            float: right;
+        }
+        span{
+            font-size: 40px;
+        }
+
+        /* 嵌套关系 */
+        .box3{
+            width: 200px;
+            height: 200px;
+            background: red;
+            margin: 50px 0;
+        }
+        .box4{
+            width: 100px;
+            height: 100px;
+            background:pink;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- body、p、div、ul、li、ol、dl、dt、dd、h 等都有默认的内外边距，需要清除-->
+    <!-- ul、ol都有一个list-style列表样式的默认样式，需要清除 -->
+    <!-- a有默认的字体样式，有下划线，字体颜色。这个是设置初始样式 -->
+
+    <!-- 一般情况下不给盒子设置高度，而是用内部的内容撑高元素。 -->
+    <!-- 目的：为了保证我们的元素在添加或者删除内容的时候，高度可以自适应内容高度而变化 -->
+    <!-- 或者height：auto； -->
+
+    <!-- 设置内容溢出隐藏的属性 -->
+        <!-- overflow：hidden； -->
+
+
+    <!-- 宽度剩余 -->
+        <!-- 
+            一般右边距根据内容不同，边距大小不同，没办法去确定这个padding-right 
+            只需要确定左边距，右侧都给width。内容自动去填充，剩余的部分自动留白就可以
+        -->
+        <!-- padding-right; 0; -->
+
+    <!-- margin -->
+        <!-- 垂直方向上相邻的两个元素如果都有外边距，而且外边距有相交的部分，相交的部分会出现外边距重合现象也叫外边距塌陷 -->
+
+        <!-- 嵌套的盒子也会出现margin合并的现象 -->
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <p><span>margin盒子与盒子塌陷示意图</span><img src="images/margin.png" alt=""></p>
+
+<!-- 嵌套关系 -->
+    <div class="box3">
+        <div class="box4"></div>
+    </div>
+    <p><span>嵌套关系的塌陷示意图</span><img src="images/margin1.png" alt=""></p>
+
+
+    <!-- 
+        实际工作中：两个同级盒子之间，要么给上面的盒子设置下边距，要么给下面的盒子设置上边距，不要同时设置
+     -->
+
+    <!-- 子盒子和父盒子之间的垂直距离 -->
+            <!-- 
+                1、强行给父盒子加一个边框，强制限定父盒子的位置
+                2、不要用儿子的margin去踹父亲，距离用父盒子的padding撑开（子、父盒子都不设置margin，父盒子设置一个padding）
+             -->
+</body>
+</html>

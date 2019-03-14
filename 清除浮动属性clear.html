@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .box{
+                width: 700px;
+                border: 10px solid #999;
+                /* margin如果小于中间浮动的子元素的高度，显示效果失效 */
+                margin-bottom: 120px;
+            }
+            .box1{
+                width: 700px;
+                border: 10px solid #999;
+            }
+            .box div,.box1 div {
+                float: left;
+                width: 100px;
+                height: 100px;
+                background: gold;
+                margin-right: 10px;
+            }
+        </style>
+</head>
+<body>
+    <!-- 
+        元素都可以设置一个叫做clear的属性，清除浮动的作用
+        属性值：    left（清除受到的左浮动影响）
+                   right（清除受到的右浮动影响）
+                   both（清除受到的左右两个方向的浮动影响）
+        作用：clear整体表示清除自身受到的其他元素带来的浮动的影响
+
+        父盒子还是不能被盒子撑高。margin如果小于中间浮动的子元素的高度，显示效果失效
+     -->
+    <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+    </div>
+    <div class="box1">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+    </div>
+</body>
+</html>

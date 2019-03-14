@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>div和span</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            width: 1000px;
+            height: 100px;
+            margin: 0 auto;
+            background: pink;
+        }
+
+        .header .logo {
+            width: 150px;
+            height: 100px;
+            float: left;
+            background: skyblue;
+        }
+
+        .header .nav {
+            width: 750px;
+            height: 100px;
+            float: right;
+            background: skyblue;
+        }
+
+        .content {
+            width: 1000px;
+            height: 400px;
+            margin: 30px auto;
+            background: pink;
+        }
+
+        .content .slide {
+            width: 250px;
+            height: 400px;
+            float: left;
+            background: skyblue;
+        }
+
+        .content .main {
+            width: 650px;
+            height: 400px;
+            float: right;
+            background: yellow;
+        }
+
+        .footer {
+            width: 1000px;
+            height: 100px;
+            margin: 0 auto;
+            background: pink;
+        }
+
+        span {
+            background: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 
+        div: division 范围，区域（用来布局）
+        容器级标签，可以放置任何标签 
+    -->
+    <!-- 
+        span：小范围，小跨度
+        是一个文本级标签，不能盛放容器级标签
+     -->
+
+    <!-- header部分 -->
+    <div class="header">
+        <div class="logo">logo</div>
+        <div class="nav">导航</div>
+    </div>
+    <!-- 主体部分 -->
+    <div class="content">
+        <div class="slide">侧边栏</div>
+        <div class="main">
+            <p>主题</p>
+            <P>这是一段文字，是网页的主体部分，<span>我是蓝色的</span> <a href="http://baidu.com" target="blank">跳转到百度</a></P>
+        </div>
+    </div>
+    <!-- footer部分 -->
+    <div class="footer">footer部分</div>
+
+</body>
+
+</html>

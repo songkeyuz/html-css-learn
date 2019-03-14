@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 700px;
+            border: 10px solid #999;
+            /* margin如果小于中间浮动的子元素的高度，显示效果失效 */
+            margin-bottom: 20px;
+        }
+        .box1{
+            width: 700px;
+            border: 10px solid #999;
+        }
+        .box div,.box1 div {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: gold;
+            margin-right: 10px;
+        }
+        /* 外墙法：只能解决浮动互相影响 */
+        .cl{
+            clear: both;
+            /* 模拟间距 */
+            height: 20px;
+        }
+        /* 内墙法 */
+        ul li{
+            font-size: 36px;
+            height: 80px;
+            clear: both;
+        }
+        .n{
+            width: 700px;
+            border: 10px solid #999;
+            margin-bottom: 20px;
+        }
+        .n1{
+            width: 700px;
+            border: 10px solid #999;
+        }
+        .n .fl,.n1 .fl {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: gold;
+            margin-right: 10px;
+        }
+        .c{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        隔墙法：在相互影响的元素中间加一道墙，阻隔开两边的元素，墙上添加一个clear属性
+            外墙法：
+                在有浮动元素的父盒子之间隔一堵墙
+            内墙法：
+                将清除浮动的墙放在有浮动元素的父盒子内部的最后，只要有浮动，就在盒子内部加一堵墙。
+                解决：
+                    浮动互相影响，高度自适应，margin失效
+                缺点：
+                    1、html结构布局，很多需要进行浮动，每个浮动的盒子内部都需要隔一堵墙，页面结构复杂会出现很多冗余的没有意义的标签
+                    2、一个盒子内的标签要浮动就都浮动，浮动后面的墙是一个标准流里的元素
+     -->
+    <ul>
+        <li>这是外墙法</li>
+    </ul>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="cl"></div>
+    <div class="box1">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <ul>
+        <li>这是内墙法</li>
+    </ul>
+    <div class="n">
+            <div class="fl"></div>
+            <div class="fl"></div>
+            <div class="fl"></div>
+            <div class="fl"></div>
+            <div class="c"></div>
+        </div>
+        <div class="n1">
+            <div class="fl"></div>
+            <div class="fl"></div>
+            <div class="fl"></div>
+            <div class="fl"></div>
+            <div class="c"></div>
+        </div>
+</body>
+</html>

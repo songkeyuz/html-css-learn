@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>高级选择器</title>
+    <style>
+       
+    /* 后代选择器
+        .box1 ul li{
+            color: green;
+        }
+        .box2 li{
+            color: red;
+        }
+
+        /* 根据嵌套关系确定最终元素 */
+    /* div ul li dl dd p{
+            color: blue
+        }
+        .box1 .one{
+            color: pink;
+        } 
+    */ 
+
+    /* 交集选择器 */
+        /* li.one{
+            color: blueviolet;
+        }
+        p.one{
+            color: skyblue;
+        }
+        li.one.lis{
+            color: green;
+        } */
+    
+    /* 并集选择器 */
+        p,li.one{
+            color: red;
+        }
+        /* 清除默认样式 */
+        div,ul,li,p{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 后代选择器（包含选择器） -->
+        <!-- 通过标签之间的嵌套关系、层级关系，限定我们大体范围，在范围内具体查找相关元素 -->
+        <!-- 根据嵌套关系，空格左侧是右侧的祖先元素 -->
+
+    <!-- 交集选择器 -->
+        <!-- 多个选择器同时存在一个标签上（同时满足） -->
+        <!-- 写法：选择器之间直接连接，没有任何符号 -->
+
+    <!-- 并集选择器 -->
+        <!-- 有很多元素可能都有相同的css样式，我们可以通过并集选择器将这些标签写在一起，统一设置样式 -->
+        <!-- 前面所有的选择器都可以作为并集里的一项，在选择器中间用逗号隔开 -->
+    <div class="box1">
+        <ul>
+            <li class="one lis">这里是第一个div的li
+                <p class="one">这里是p</p>
+            </li>
+            <li>这里是第一个div的li</li>
+            <li>这里是第一个div的li</li>
+            <li>这里是第一个div的li</li>
+        </ul>
+    </div>
+    <div class="box2">
+            <ul>
+                <li class="one">这里是第二个div的li</li>
+                <li>这里是第二个div的li</li>
+                <li>这里是第二个div的li</li>
+                <li>这里是第二个div的li</li>
+            </ul>
+        </div>
+    <div>
+        <p>这是外面的p标签</p>
+        <ul>
+            <li>
+                <dl>
+                    <dt></dt>
+                    <dd>
+                        <p>这是里面的p</p>
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+    </body>
+</html>

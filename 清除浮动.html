@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>浮动的元素不能撑高父级</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 500px;
+            /* height: 100px;如果父级盒子不设置高度，浮动元素不能撑开父级盒子 */
+            border: 10px solid #999;
+        }
+        .box div{
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: gold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        浮动的元素脱离标准流之后，不能再撑高它的父级盒子
+        浮动会影响后面的浮动的元素
+    -->
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- 
+        把父级盒子的宽度设为700px后   后面的盒子会去贴前面的盒子
+     -->
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+
+    <!-- 
+        解决办法：
+            1、给父盒子加高度（能解决父级高度的问题，解决浮动影响后面的浮动的问题）
+                高度还是不能自适应
+            2清除浮动属性clear
+                只能解决浮动的互相影响
+            3、隔墙法
+     -->
+</body>
+</html>

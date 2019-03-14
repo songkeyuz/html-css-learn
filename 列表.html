@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>列表</title>
+</head>
+<body>
+    <!-- 
+        无序列表（ul,li）
+            是一组标签  ul和li这两个标签必须承兑出现
+            一个ul可以嵌套多个li
+            ul : unordered list 无序列表
+            li : list item 列表项  (是经典的容器级标签，里面可以放任何标签 包括ul>li)
+     -->
+     <ul>
+         <li>春天</li>
+         <li>夏天</li>
+         <li>秋天</li>
+         <li>冬天</li>
+     </ul>
+     <ul>
+         <li>
+             <h2>服装</h2>
+             <ul>
+                <li>男装</li>
+                <li>女装</li>
+                <li>童装</li>
+            </ul>
+        </li>
+     </ul>
+
+     <!-- 
+         有序列表（ol,li）与无序列表相似
+            一般会清楚默认样式
+            style      ol{list-style:none;}
+         -->
+    <ol>
+        <li>第1项</li>
+        <li>第2项</li>
+        <li>第3项</li>
+        <li>第4项</li>
+    </ol>
+
+    <!-- 
+        定义列表
+            有三个标签参与  dl,dt,dd
+            dl : definition list  定义列表
+            dt : definition title  定义标题
+            dd : definition description   定义说明、解释。解释最近的dt
+            嵌套关系：  dl>dt+dd
+
+        -->
+    <dl>
+        <dt>胡歌</dt>
+        <dd>代表作品：《琅琊榜》、《伪装者》、《仙剑奇侠传》、等</dd>
+        <dd>爱好：开餐馆、等</dd>
+        <dd>获奖：。。。。。。。。。。。</dd>
+
+        <dt>杨洋</dt>
+        <dd>代表作品：《盗墓笔记》、《红楼梦》、等</dd>
+
+        <dt>郭德纲</dt>
+        <dd>代表作品：《三笑才子佳人》、《丑娘娘》等</dd>
+    </dl>
+</body>
+</html>

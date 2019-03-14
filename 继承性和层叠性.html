@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>继承性，层叠性</title>
+
+    <style>
+        div{
+            color: red;
+        }
+        .box{
+            color: green;
+        }
+        #demo{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 继承性 -->
+        <!-- 后代元素能够继承来自祖先元素的文字的样式，不能继承盒子的样式 -->
+        <!-- 我们可以将整体的文字样式写在最祖先元素bady -->
+
+    <!-- 层叠性 -->
+    <!-- 计算权重的方法：数基础选择器的个数。依次比较id个数————类的个数————标签的个数 -->
+        <!-- 同一个标签可以被多个选择器选中，这时比较权重，通配符权重最低 -->
+        <!-- 选择器都选中了元素（比较权重）
+            id选择器的权重高于类选择器高于标签选择器 -->
+        <!-- 如果没有选中元素，样式靠继承
+            1、祖先元素距离目标元素距离不同。继承样式采用就近原则
+            2、距离相同就比较权重
+            3、距离相同权重相同，后写层叠前写的
+        -->
+        <!-- 关键字 ！important
+            给单一属性添加，会给这个属性的权重提升到最大
+            前提：不适用于就近原则，    添加在属性值后面 -->
+        
+    <div class="box" id="demo">看看我的颜色听谁的</div>
+</body>
+</html>

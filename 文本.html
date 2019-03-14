@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文本</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 400px;
+            height: 400px;
+            border: 1px solid blue ;
+        }
+        p{
+            width: 300px;
+            font-size: 16px;
+            color: #333;
+            line-height: 28px;
+            font-family: "Arial","微软雅黑";
+            text-indent: 10%;
+        }
+        li{
+            font-size: 30px;
+            color: #333;
+            line-height: 48px;
+            font-family: "Arial","微软雅黑";
+        }
+        .li1{
+            text-decoration: none;
+        }
+        .li2{
+            text-decoration: overline;
+        }
+        .li3{
+            text-decoration: line-through;
+        }
+        .li4{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- text-align  对齐 -->
+        <!-- 属性值：左对齐left（默认）、右对齐right、居中center -->
+    
+    <!-- text-indent 文本缩进 -->
+        <!-- 设置文本的首行缩进，单位em，px,% -->
+        <!-- %是参考的是父盒子宽度的百分比 -->
+
+    <!-- text-decoration 文本修饰 -->
+        <!-- 
+            正常，没有修饰：none
+            下划线：underline
+            中划线（删除线）：line-through
+            上划线：overline
+         -->
+    <!-- 所有文本（除了a标签）默认属性都是none -->
+    <div>
+        <p>这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字</p>
+    </div>
+    <ul>
+        <li class="li1">This is a paragraph.</li>
+        <li class="li2">This is a paragraph.</li>
+        <li class="li3">This is a paragraph.</li>
+        <li class="li4">This is a paragraph.</li>
+    </ul>
+</body>
+</html>
