@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            width: 260px;
+            /* 自适应高度 */
+            overflow: hidden;
+        }
+
+        h1 a {
+            /* 转换a标签的显示模式（行内转块 可设置高度、宽度、内外边距等属性） */
+            display: block;
+            height: 146px;
+            background: url(images/lufei.png);
+            /* 溢出隐藏文字 */
+            /* font-size: 0; */
+            text-indent: -9999px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 用图片代替文字 -->
+    <!-- 搜索时是搜索的文字 ，但一般显示是显示logo图片  所以隐藏文字 -->
+    <h1><a href="#">路飞</a></h1>
+</body>
+
+</html>
