@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        div{
+            width: 500px;
+            height: 200px;
+            border: 1px solid #000;
+            font-size: 20px;
+        }
+        div span{
+            font-size: 12px;
+            position: relative;
+            color: red;
+            bottom: 6px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        相对定位：元素相对于自身进行的位置偏移、不会使元素脱离文档流
+        属性：position
+        属性值：relative （相对的）
+        偏移的数据量。有方向属性来控制。（left、right）（top、bottom）不能同时出现
+        元素的偏移方向与属性方向是相反的（属性值为正）
+
+        1、结构比较稳定，经常拿来做绝对定位的参考元素， 子绝父相。
+        2、微调
+     -->
+
+     <div>这是一个相对定位微调的例子。<span>[1]</span>后面的文字</div>
+</body>
+</html>
