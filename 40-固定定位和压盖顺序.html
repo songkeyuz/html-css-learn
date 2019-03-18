@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        固定定位，参考我们的浏览器窗口进行定位，会始终悬浮在窗口
+        属性值：fixed
+     -->
+
+    <!-- 
+        压盖顺序：
+            有定位的元素压盖没有定位的元素
+            有定位的元素，不区分定位类型，只要html结构写在后面的压盖写在前面的
+
+        自定义压盖顺序
+        属性：z-index
+        属性值：数字，没有任何单位，数值越大，压盖数值小的
+            只能给定位元素加
+            父子盒模型里，如果父子都有定位，都有自定义的z-index，两对父子对比时，不管子元素的z-index的属性值多大，只要父亲z-index值小，都只能被压盖
+     -->
+
+</body>
+
+</html>

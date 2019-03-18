@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            font-size: 50px;
+
+        }
+
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: blueviolet;
+            margin-bottom: 10px;
+        }
+
+        .box {
+            background-color: skyblue;
+            position: absolute;
+            top: 100px;
+            left: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        绝对定位：定位参考元素不固定
+        属性值：absolute  绝对的
+        特点：绝对定位后，脱离标准流，标准流的位置让给了后面的元素
+    -->
+    <!-- 
+        1、参考元素为body时的定位参考点
+            top：定位参考点是页面的左上角或右上角
+            bottom：定位参考点是首屏的左下角或右下角， 会随滚动消失
+     -->
+
+
+    <div>1</div>
+    <div class="box">2</div>
+    <div>3</div>
+    <div>4</div>
+
+    <img src="images/juedui.png" alt="">
+    <img src="images/top.png" alt="">
+
+
+    <p>bottom：定位参考点是首屏的左下角或右下角</p>
+    <img src="images/bottom.png" alt="">
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 
+        由于存在一些特殊的html和css，要根据浏览器的不同，写不同的代码，显示效果是一样的
+        hack：针对不同的浏览器写不同的html和css
+    -->
+
+    <!-- 
+        IE浏览器存在很多兼容问题，IE给我们留了一个接口，规定IE版本的浏览器认识里面是
+        html结构，其他的浏览器认为里面的是注释
+    -->
+
+    <!--[if lte IE 9]>
+        这是一段文字
+    <![endif]-->
+
+    <!-- 
+        lte: less than or equal , 小于等于
+        lt: 小于 
+        gt: greater than ，大于
+        gte: 大于等于
+    -->
+
+    <!--[if IE 8]>
+        <p>只有IE8能看见</p>
+    <![endif]-->
+
+    <!-- 作为浏览器版本更新提醒 -->
+</body>
+
+</html>
