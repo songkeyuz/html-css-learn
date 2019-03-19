@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            /* 只有IE6认识   _ 和 - */
+            /* @background: yellow; */
+            background: red\9;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        CSS HACK分为两类：值Hack 和选择器Hack
+            值 hack符：@ * ( )符号都可以，表示只有IE6/7认识
+                    \9  IE10一下都可以（在属性值后面加）
+            
+            选择器 hack符：IE6 及以下  *空格html空格 后面正常写法
+                        IE7及以下   正常写法后面加个,
+                        除了IE6  其他都可以    html空格>空格body空格   后面正常写法
+    -->
+
+
+
+    <div class="box">
+
+    </div>
+</body>
+
+</html>
